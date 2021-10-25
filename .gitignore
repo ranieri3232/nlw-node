@@ -4,3 +4,4 @@ prisma/dev.db
 dev.db
 
 **/*.db
+dist
