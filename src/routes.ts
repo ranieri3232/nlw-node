@@ -21,6 +21,7 @@ router.get('/profile', ensureAuthenticated, new ProfileUserController().handle);
 
 router.get('/api', (req: Request, res: Response) => {
   console.log(process.env.PORT);
+  console.log(process.env.JWT_SECRET);
   return res.json({ status: 200, content: "Hello, i'm a API " });
 });
 
